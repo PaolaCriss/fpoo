@@ -1,0 +1,64 @@
+body {
+
+    background-color: black;
+    /*  CASO EU QUEIRA COLOCAR FOTO NO FUNDO E QUE ELA N SE REPITA
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+div {
+    color: rgb(208, 227, 226);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    background-color: rgb(16, 16, 65);
+    position: static;
+    text-align: center;
+    font-size: 125%;
+    font-family: calibri;
+    padding: 35px;
+    width: 85%;
+}
+
+.img {
+    width: 700px;
+    animation: go-back 2s;
+    max-width: 100%;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/*
+@media screend and (min-width: 800px) {
+    .img {
+        animation: go-back 1s infinite;
+    }
+}
+*/
+
+  .bloco div{
+    width: 250px;
+    height: 150px;
+    margin: 15px;
+    overflow: hidden;
+  }
+  .bloco img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  .bloco img:hover {
+    -webkit-transform:scale(1.09);
+    transform:scale(1.09);
+  }
+  
